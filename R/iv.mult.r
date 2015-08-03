@@ -60,7 +60,7 @@ iv.mult <- function(df,y,summary=FALSE,vars=NULL,verbose=FALSE,rcontrol=NULL) {
     ivlist$Strength[ivlist$InformationValue >= .02 & ivlist$InformationValue < .1] <- 5
     ivlist$Strength[ivlist$InformationValue < .02] <- 6
     ivlist$Strength <- factor(ivlist$Strength, levels=c(1,2,3,4,5,6), 
-                              labels= c("Suspicious","Very strong","Strong","Average","Weak","Wery weak"))
+                              labels= c("Suspicious","Very strong","Strong","Average","Weak","Very weak"))
   }
   ivlist
 }
